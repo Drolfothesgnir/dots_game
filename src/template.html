@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="controls">
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle btn-lg"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Pick game mode
+        </button>
+        <div
+          class="dropdown-menu"
+          id="mode"
+          aria-labelledby="dropdownMenuButton"
+        ></div>
+      </div>
+      <div class="name">
+        <input
+          id="name"
+          type="text"
+          maxlength="25"
+          class="form-control form-control-lg"
+          placeholder="Enter your name"
+        />
+      </div>
+      <button id="play" class="btn btn-secondary btn-lg">Play</button>
+    </div>
+    <div id="message">
+      <h3 class="text text-center"></h3>
+    </div>
+    <div id="app"></div>
+    <h1 class="text-center mt-5 mb-3">Leader board</h1>
+    <div id="leader-board"></div>
+  </body>
+</html>
